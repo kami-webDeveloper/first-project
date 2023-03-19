@@ -1,0 +1,323 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.button-basic, html body .ticket .ticket-range .ticket-block .ticket-btn, html body .header-content .content .content-btn {
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 22rem;
+  height: 6rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #dd5138;
+  transition: all 0.4s ease;
+}
+.button-basic:hover, html body .ticket .ticket-range .ticket-block .ticket-btn:hover, html body .header-content .content .content-btn:hover {
+  color: #383838;
+}
+
+.headings, html body .ticket .ticket-range .ticket-block .ticket-block-heading, html body .ticket .ticket-heading, html body .speaker-list .speaker-heading, html body .event .event-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #404142;
+  letter-spacing: 1px;
+}
+
+.event-extend, html body .speaker-list .speaker-block .speaker-content, html body .event .event-panel .event-content {
+  height: 45vh;
+  width: 24vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-size: 1.6rem;
+  font-family: Dosis, sans-serif;
+  overflow-x: hidden;
+}
+html body p {
+  color: #404142;
+}
+html body .web-menu {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+}
+html body .web-menu .menu-list {
+  list-style: none;
+  text-align: center;
+}
+html body .web-menu .menu-list .menu-list-item {
+  width: 10rem;
+}
+html body .web-menu .menu-list .menu-list-item a {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+html body .web-menu .menu-list .menu-list-item a .item-name {
+  color: #fff;
+  background-color: #dd5138;
+  font-size: 1.3rem;
+  width: 7rem;
+  border-radius: 0.25rem;
+  visibility: hidden;
+}
+html body .web-menu .menu-list .menu-list-item a .circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #dd5138;
+  transition: all 0.2s ease;
+}
+html body .web-menu .menu-list .menu-list-item a .circle:hover {
+  background-color: #c0452f;
+  transform: scale(1.5);
+}
+html body .header-content {
+  padding: 5rem;
+  background-color: #016cc7;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+html body .header-content .content {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body .header-content .content img.website-heading {
+  width: 15rem;
+}
+html body .header-content .content img.rocket-vector {
+  animation: shakeY;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+html body .header-content .content .second-heading {
+  margin-top: 4rem;
+  font-weight: 200;
+  font-size: 3.9rem;
+  color: #fff;
+}
+html body .header-content .content .third-heading {
+  margin-top: 2rem;
+  font-weight: 200;
+  font-size: 2.5rem;
+  color: #fff;
+}
+html body .header-content .content .content-text {
+  color: rgba(255, 255, 255, 0.6117647059);
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+html body .header-content .content .content-btn {
+  margin-top: 10rem;
+}
+html body .event {
+  width: 100vw;
+  height: 70vh;
+  margin-top: 6rem;
+}
+html body .event .event-panel {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+html body .event .event-panel .event-content h3 {
+  font-weight: 300;
+}
+html body .speaker-list {
+  width: 100vw;
+  margin-top: 1rem;
+}
+html body .speaker-list .speaker-block {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+html body .speaker-list .speaker-block .speaker-content {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  width: 40rem;
+  height: 45rem;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(128, 128, 128, 0.423);
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+html body .speaker-list .speaker-block .speaker-content:hover {
+  transform: translateY(-1.5rem) scale(1.001);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.509);
+  border: 0;
+}
+html body .ticket {
+  margin-top: 5rem;
+  width: 100vw;
+  height: 60vh;
+  background-color: #fcd93b;
+}
+html body .ticket .ticket-heading {
+  margin-top: 2rem;
+}
+html body .ticket .ticket-range {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html body .ticket .ticket-range .ticket-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+}
+html body .ticket .ticket-range .ticket-block .ticket-block-heading {
+  font-weight: 200;
+  font-size: 3rem;
+}
+html body .ticket .ticket-range .ticket-block .ticket-price {
+  color: #dd5138;
+  font-size: 8rem;
+  font-weight: 200;
+}
+html body .ticket .ticket-range .ticket-block .ticket-text {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+html body .ticket .ticket-range .ticket-block .ticket-btn {
+  font-size: 2rem;
+}
+html body .footer-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: #404142;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html body .footer-content .footer-input, html body .footer-content .twitter-content, html body .footer-content .twitter-content form, html body .footer-content .footer-input form, html body .footer-content .twitter-content form, html body .footer-content .twitter-content form form {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 90%;
+}
+html body .footer-content .footer-input .input-heading, html body .footer-content .twitter-content .input-heading {
+  margin: 0 auto;
+}
+html body .footer-content .footer-input .input-heading h3, html body .footer-content .twitter-content .input-heading h3 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  color: #fff;
+}
+html body .footer-content .footer-input form, html body .footer-content .twitter-content form, html body .footer-content .twitter-content form form, html body .footer-content .footer-input form form, html body .footer-content .twitter-content form form, html body .footer-content .twitter-content form form form {
+  position: relative;
+}
+html body .footer-content .footer-input form .input-btn button, html body .footer-content .twitter-content form .input-btn button {
+  position: absolute;
+  right: 1rem;
+  padding: 0.75rem 2.5rem;
+  background: #cbaf2f;
+  border: 0;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+html body .footer-content .footer-input form .input-btn button:hover, html body .footer-content .twitter-content form .input-btn button:hover {
+  background-color: #fcd93b;
+}
+html body .footer-content .footer-input form .input-block, html body .footer-content .twitter-content form .input-block {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+html body .footer-content .footer-input form .input-block textarea, html body .footer-content .twitter-content form .input-block textarea {
+  width: 74%;
+  border-radius: 0.5rem;
+}
+html body .footer-content .footer-input form label, html body .footer-content .twitter-content form label, html body .footer-content .twitter-content form form label, html body .footer-content .footer-input form form label, html body .footer-content .twitter-content form form label, html body .footer-content .twitter-content form form form label {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+html body .footer-content .footer-input form input, html body .footer-content .twitter-content form input, html body .footer-content .twitter-content form form input, html body .footer-content .footer-input form form input, html body .footer-content .twitter-content form form input, html body .footer-content .twitter-content form form form input {
+  border: 0;
+  width: 45rem;
+  height: 5rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  transition: all 0.1s ease;
+}
+html body .footer-content .footer-input form input:focus, html body .footer-content .twitter-content form input:focus {
+  border: 0.299rem solid rgba(32, 178, 171, 0.325);
+  box-shadow: 2px 2px 6px 3px rgba(255, 255, 255, 0.1450980392);
+}
+html body .footer-content .twitter-content {
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  font-size: 1.7rem;
+}
+html body .footer-content .twitter-content .footer-text {
+  margin-top: 5rem;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+html body .footer-content .twitter-content .footer-text::after {
+  display: block;
+  content: "";
+  width: 50rem;
+  height: 0.1rem;
+  background-color: #fff;
+  margin-top: 1rem;
+}
+html body .footer-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  background-color: #2f2f30;
+}
+html body .footer-sections .copy-right .copy-right-text {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+}
+html body .footer-sections .footer-list {
+  list-style-type: none;
+  width: 40rem;
+  display: flex;
+  justify-content: space-around;
+}
+html body .footer-sections .footer-list .list-item a {
+  color: #fcd93b;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+html body .footer-sections .footer-list .list-item a:hover {
+  color: #dd5138;
+}/*# sourceMappingURL=min.css.map */
